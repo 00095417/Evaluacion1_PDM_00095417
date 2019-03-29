@@ -10,9 +10,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/produc_text"
+        android:textSize="@dimen/size_title"
         android:layout_gravity="center"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginBottom="@dimen/margen_title"
+        android:layout_marginTop="@dimen/margen_title"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -24,18 +25,24 @@
             android:id="@+id/produc1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/c1"
+            android:layout_marginBottom="@dimen/margen_btn"
+            android:layout_marginRight="@dimen/margen_btn"
             android:text="Produto1 \n "/>
 
         <Button
             android:id="@+id/produc2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/c2"
             android:text="Produto2 \n "/>
 
         <Button
             android:id="@+id/produc3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/c3"
+            android:layout_marginLeft="@dimen/margen_btn"
             android:text="Produto3 \n "/>
 
     </LinearLayout>
@@ -50,18 +57,23 @@
             android:id="@+id/produc4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/c4"
+            android:layout_marginRight="@dimen/margen_btn"
             android:text="Produto4 \n "/>
 
         <Button
             android:id="@+id/produc5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/c5"
             android:text="Produto5 \n "/>
 
         <Button
             android:id="@+id/produc6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/c6"
+            android:layout_marginLeft="@dimen/margen_btn"
             android:text="Produto6 \n "/>
 
     </LinearLayout>
@@ -76,18 +88,26 @@
             android:id="@+id/produc7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/c7"
+            android:layout_marginTop="@dimen/margen_btn"
+            android:layout_marginRight="@dimen/margen_btn"
             android:text="Produto7 \n "/>
 
         <Button
             android:id="@+id/produc8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/c8"
+            android:layout_marginTop="@dimen/margen_btn"
             android:text="Produto8 \n "/>
 
         <Button
             android:id="@+id/produc9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/c9"
+            android:layout_marginTop="@dimen/margen_btn"
+            android:layout_marginLeft="@dimen/margen_btn"
             android:text="Produto9 \n "/>
 
     </LinearLayout>
@@ -124,6 +144,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:background="@color/color_btn"
             android:text="@string/enviar_text"/>
 
     </LinearLayout>
