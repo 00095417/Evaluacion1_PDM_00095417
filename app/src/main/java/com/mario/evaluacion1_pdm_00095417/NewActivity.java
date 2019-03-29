@@ -36,12 +36,22 @@ public class NewActivity extends AppCompatActivity {
             text_p2_aux = new_Intent.getStringExtra(AppConstant.TEXT_KEYS_P2);
             text_p3_aux = new_Intent.getStringExtra(AppConstant.TEXT_KEYS_P3);
             text_p4_aux = new_Intent.getStringExtra(AppConstant.TEXT_KEYS_P4);
+            text_p5_aux = new_Intent.getStringExtra(AppConstant.TEXT_KEYS_P5);
+            text_p6_aux = new_Intent.getStringExtra(AppConstant.TEXT_KEYS_P6);
+            text_p7_aux = new_Intent.getStringExtra(AppConstant.TEXT_KEYS_P7);
+            text_p8_aux = new_Intent.getStringExtra(AppConstant.TEXT_KEYS_P8);
+            text_p9_aux = new_Intent.getStringExtra(AppConstant.TEXT_KEYS_P9);
         }
         text_show.setText(text_aux);
         text_p1.setText(text_p1_aux);
         text_p2.setText(text_p2_aux);
         text_p3.setText(text_p3_aux);
         text_p4.setText(text_p4_aux);
+        text_p5.setText(text_p5_aux);
+        text_p6.setText(text_p6_aux);
+        text_p7.setText(text_p7_aux);
+        text_p8.setText(text_p8_aux);
+        text_p9.setText(text_p9_aux);
 
 
     }
