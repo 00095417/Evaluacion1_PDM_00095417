@@ -85,8 +85,29 @@ public class MainActivity extends AppCompatActivity {
                        "Correo: " + correo.getText() + "\n" +
                        "Total de Productos: " + total;
 
+            String text_p1 = "Produto1 \n " + cont1;
+            String text_p2 = "Produto2 \n " + cont2;
+            String text_p3 = "Produto1 \n " + cont3;
+            String text_p4 = "Produto1 \n " + cont4;
+            String text_p5 = "Produto1 \n " + cont5;
+            String text_p6 = "Produto1 \n " + cont6;
+            String text_p7 = "Produto1 \n " + cont7;
+            String text_p8 = "Produto1 \n " + cont8;
+            String text_p9 = "Produto1 \n " + cont9;
+
             Intent m_Intent = new Intent(MainActivity.this,NewActivity.class);
             m_Intent.putExtra(AppConstant.TEXT_KEYS,text_aux);
+            m_Intent.putExtra(AppConstant.TEXT_KEYS_P1,text_p1);
+            m_Intent.putExtra(AppConstant.TEXT_KEYS_P2,text_p2);
+            m_Intent.putExtra(AppConstant.TEXT_KEYS_P3,text_p3);
+            m_Intent.putExtra(AppConstant.TEXT_KEYS_P4,text_p4);
+            m_Intent.putExtra(AppConstant.TEXT_KEYS_P5,text_p5);
+            m_Intent.putExtra(AppConstant.TEXT_KEYS_P6,text_p6);
+            m_Intent.putExtra(AppConstant.TEXT_KEYS_P7,text_p7);
+            m_Intent.putExtra(AppConstant.TEXT_KEYS_P7,text_p7);
+            m_Intent.putExtra(AppConstant.TEXT_KEYS_P8,text_p8);
+            m_Intent.putExtra(AppConstant.TEXT_KEYS_P9,text_p9);
+
             startActivity(m_Intent);
         });
 

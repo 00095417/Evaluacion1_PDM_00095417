@@ -6,4 +6,6 @@
     <string name="correo_text">Correo Electronico</string>
     <string name="correo_edit_text">Escriba el correo aquí</string>
     <string name="enviar_text">Enviar</string>
+    <string name="factura_text">Factura</string>
+    <string name="share_text">Share</string>
 </resources>
