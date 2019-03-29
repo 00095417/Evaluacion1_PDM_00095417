@@ -63,6 +63,15 @@ public class NewActivity extends AppCompatActivity {
             m_intent_share.setAction(Intent.ACTION_SEND);
             m_intent_share.setType("text/plain");
             m_intent_share.putExtra(AppConstant.TEXT_KEYS,text_aux);
+            m_intent_share.putExtra(AppConstant.TEXT_KEYS_P1,text_p1_aux);
+            m_intent_share.putExtra(AppConstant.TEXT_KEYS_P2,text_p2_aux);
+            m_intent_share.putExtra(AppConstant.TEXT_KEYS_P3,text_p3_aux);
+            m_intent_share.putExtra(AppConstant.TEXT_KEYS_P4,text_p4_aux);
+            m_intent_share.putExtra(AppConstant.TEXT_KEYS_P5,text_p5_aux);
+            m_intent_share.putExtra(AppConstant.TEXT_KEYS_P6,text_p6_aux);
+            m_intent_share.putExtra(AppConstant.TEXT_KEYS_P7,text_p7_aux);
+            m_intent_share.putExtra(AppConstant.TEXT_KEYS_P8,text_p8_aux);
+            m_intent_share.putExtra(AppConstant.TEXT_KEYS_P9,text_p9_aux);
 
             startActivity(m_intent_share);
         });
