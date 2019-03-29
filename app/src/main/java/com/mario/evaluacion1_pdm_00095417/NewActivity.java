@@ -3,11 +3,17 @@ package com.mario.evaluacion1_pdm_00095417;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class NewActivity extends AppCompatActivity {
 
     TextView text_show, text_p1, text_p2, text_p3, text_p4, text_p5, text_p6, text_p7, text_p8, text_p9;
+    Button btn_share;
+    String text_aux = "No hay producto";
+    String text_p1_aux = "", text_p2_aux = "", text_p3_aux = "",
+            text_p4_aux = "", text_p5_aux = "", text_p6_aux = "",
+            text_p7_aux = "", text_p8_aux = "", text_p9_aux = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +30,8 @@ public class NewActivity extends AppCompatActivity {
         text_p7 = findViewById(R.id.text_p7);
         text_p8 = findViewById(R.id.text_p8);
         text_p9 = findViewById(R.id.text_p9);
+        btn_share = findViewById(R.id.btn_share);
 
-
-        String text_aux = "No hay producto";
-        String text_p1_aux = "", text_p2_aux = "", text_p3_aux = "", text_p4_aux = "", text_p5_aux = "", text_p6_aux = "", text_p7_aux = "", text_p8_aux = "", text_p9_aux = "";
         Intent new_Intent = getIntent();
 
         if (new_Intent != null){
@@ -53,6 +57,15 @@ public class NewActivity extends AppCompatActivity {
         text_p8.setText(text_p8_aux);
         text_p9.setText(text_p9_aux);
 
+        btn_share.setOnClickListener(v -> {
+            Intent m_intent_share = new Intent();
+
+            m_intent_share.setAction(Intent.ACTION_SEND);
+            m_intent_share.setType("text/plain");
+            m_intent_share.putExtra(AppConstant.TEXT_KEYS,text_aux);
+
+            startActivity(m_intent_share);
+        });
 
     }
 }
