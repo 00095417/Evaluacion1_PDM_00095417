@@ -9,9 +9,9 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
     Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn_enviar;
-    int cont1 = 0, cont2 = 0, cont3 = 0, cont4 = 0, cont5 = 0, cont6 = 0, cont7 = 0, cont8 = 0, cont9 = 0;
+    int cont1 = 0, cont2 = 0, cont3 = 0, cont4 = 0, cont5 = 0, cont6 = 0, cont7 = 0, cont8 = 0, cont9 = 0, total = 0;
     EditText name, correo;
-    String text;
+    String text_aux;
 
 
     @Override
@@ -80,8 +80,14 @@ public class MainActivity extends AppCompatActivity {
 
         btn_enviar.setOnClickListener(v->{
 
-            //Intent m_Intent = new Intent()
+            total = cont1 + cont2 + cont3 + cont4 + cont5 + cont6 + cont7 + cont8 + cont9;
+            text_aux = "Usuario: " + name.getText() + "\n" +
+                       "Correo: " + correo.getText() + "\n" +
+                       "Total de Productos: " + total;
 
+            Intent m_Intent = new Intent(MainActivity.this,NewActivity.class);
+            m_Intent.putExtra(AppConstant.TEXT_KEYS,text_aux);
+            startActivity(m_Intent);
         });
 
     }
